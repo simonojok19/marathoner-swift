@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Workout View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WorkoutViewController" customModule="Marathoner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" distribution="fillProportionally" spacing="66" translatesAutoresizingMaskIntoConstraints="NO" id="sav-gm-CZU">
+                                <rect key="frame" x="84" y="54" width="246" height="115"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="T74-7M-YeZ" userLabel="Half Marathon Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="115"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgL-bo-uqE" userLabel="Half Marathon Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="SN9-L1-gFd"/>
+                                                    <constraint firstAttribute="width" constant="90" id="wbW-ZP-Dra"/>
+                                                </constraints>
+                                                <state key="normal" image="running_blue"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="13.1 mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l29-uD-zfS">
+                                                <rect key="frame" x="23" y="98" width="44" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.25094899539999999" green="0.25099846720000002" blue="0.2509458363" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="i2U-FN-sws" userLabel="Full Marathon Stack View">
+                                        <rect key="frame" x="156" y="0.0" width="90" height="115"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRq-s5-qha" userLabel="Full Marathron Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="2CL-fQ-JcM"/>
+                                                    <constraint firstAttribute="width" constant="90" id="a9z-GG-C1E"/>
+                                                </constraints>
+                                                <state key="normal" image="running_green"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="26.2 mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLA-DS-Sdo">
+                                                <rect key="frame" x="21" y="98" width="48" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.25094899539999999" green="0.25099846720000002" blue="0.2509458363" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="J4C-27-BO6" userLabel="Event Table View">
+                                <rect key="frame" x="0.0" y="179" width="414" height="683"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DateTableViewCell" rowHeight="60" id="23O-SA-nii" customClass="DateTableViewCell" customModule="Marathoner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="23O-SA-nii" id="bwO-Uu-PXi">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZgR-D5-1c6">
+                                                    <rect key="frame" x="20" y="11" width="374" height="38"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dig-7P-zql">
+                                                            <rect key="frame" x="0.0" y="0.0" width="180" height="38"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="dateLabel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHT-WN-g5P">
+                                                            <rect key="frame" x="188" y="0.0" width="186" height="38"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ZgR-D5-1c6" secondAttribute="bottom" id="Iq9-in-kSA"/>
+                                                <constraint firstItem="ZgR-D5-1c6" firstAttribute="top" secondItem="bwO-Uu-PXi" secondAttribute="topMargin" id="bMg-4g-xHc"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ZgR-D5-1c6" secondAttribute="trailing" id="dlq-fa-efd"/>
+                                                <constraint firstItem="ZgR-D5-1c6" firstAttribute="leading" secondItem="bwO-Uu-PXi" secondAttribute="leadingMargin" id="ib8-GP-cLf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="YHT-WN-g5P" id="OzA-Sa-uQ7"/>
+                                            <outlet property="titleLabel" destination="dig-7P-zql" id="Cd8-BL-bOw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DatePickerTableViewCell" rowHeight="162" id="l2R-U6-hNo" customClass="DatePickerTableViewCell" customModule="Marathoner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="115.5" width="414" height="162"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l2R-U6-hNo" id="2Nc-uv-wqJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="161.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gil-7F-YOz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="161.5"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="571211291.70514202">
+                                                        <!--2019-02-07 05:48:11 +0000-->
+                                                    </date>
+                                                </datePicker>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Gil-7F-YOz" firstAttribute="leading" secondItem="2Nc-uv-wqJ" secondAttribute="leading" id="3mJ-Ql-vqA"/>
+                                                <constraint firstAttribute="bottom" secondItem="Gil-7F-YOz" secondAttribute="bottom" id="VVI-fV-r9N"/>
+                                                <constraint firstAttribute="trailing" secondItem="Gil-7F-YOz" secondAttribute="trailing" id="doJ-qK-4SZ"/>
+                                                <constraint firstItem="Gil-7F-YOz" firstAttribute="top" secondItem="2Nc-uv-wqJ" secondAttribute="top" id="oW9-Vy-w0T"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="datePicker" destination="Gil-7F-YOz" id="HF6-Vc-eBb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorkoutTableViewCell" rowHeight="60" id="XoI-Q2-miD" customClass="WorkoutTableViewCell" customModule="Marathoner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="277.5" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XoI-Q2-miD" id="dRp-5D-hou">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0ET-Hy-Vdk">
+                                                    <rect key="frame" x="20" y="11" width="374" height="38"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="workoutLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDp-3f-eO8">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.16433492299999999" green="0.6224124432" blue="0.735712111" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJf-Fc-fPk">
+                                                            <rect key="frame" x="0.0" y="21" width="374" height="17"/>
+                                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                                            <color key="textColor" red="0.25094899539999999" green="0.25099846720000002" blue="0.2509458363" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0ET-Hy-Vdk" firstAttribute="leading" secondItem="dRp-5D-hou" secondAttribute="leadingMargin" id="83K-ct-Lhc"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="0ET-Hy-Vdk" secondAttribute="bottom" id="j49-Vf-zfV"/>
+                                                <constraint firstItem="0ET-Hy-Vdk" firstAttribute="top" secondItem="dRp-5D-hou" secondAttribute="topMargin" id="pjM-bF-rVA"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="0ET-Hy-Vdk" secondAttribute="trailing" id="yj8-Gc-gzg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="quoteLabel" destination="nJf-Fc-fPk" id="U0w-Yc-arZ"/>
+                                            <outlet property="workoutLabel" destination="DDp-3f-eO8" id="vHk-4C-t2r"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OverviewTableViewCell" rowHeight="60" id="m1K-Vb-oxz" customClass="OverviewTableViewCell" customModule="Marathoner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="337.5" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m1K-Vb-oxz" id="n1P-ra-Mci">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wwo-kZ-41a">
+                                                    <rect key="frame" x="20" y="11" width="374" height="38"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="overviewLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdU-H4-8WX">
+                                                            <rect key="frame" x="0.0" y="0.0" width="172" height="38"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.93892639879999995" green="0.35416045779999999" blue="0.15763351319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="distanceLabel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Jz-0a-SIQ">
+                                                            <rect key="frame" x="202" y="0.0" width="172" height="38"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.40369582180000002" green="0.35652673239999999" blue="0.65521335599999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="wwo-kZ-41a" secondAttribute="trailing" id="2xW-b3-u8S"/>
+                                                <constraint firstItem="wwo-kZ-41a" firstAttribute="leading" secondItem="n1P-ra-Mci" secondAttribute="leadingMargin" id="30t-MX-xgx"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wwo-kZ-41a" secondAttribute="bottom" id="e76-AY-24R"/>
+                                                <constraint firstItem="wwo-kZ-41a" firstAttribute="top" secondItem="n1P-ra-Mci" secondAttribute="topMargin" id="hRA-Hl-Ahs"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="totalDistanceLabel" destination="7Jz-0a-SIQ" id="UdL-SH-VXj"/>
+                                            <outlet property="weeksLabel" destination="gdU-H4-8WX" id="zAY-YU-tnV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="s36-9e-Nhd"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="DEV-1f-zbI"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J4C-27-BO6" secondAttribute="trailing" id="1EP-zh-tWA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="J4C-27-BO6" secondAttribute="bottom" id="8yG-1R-4TA"/>
+                            <constraint firstItem="J4C-27-BO6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="D6g-ra-6Km"/>
+                            <constraint firstItem="sav-gm-CZU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Qyc-7J-1zI"/>
+                            <constraint firstItem="J4C-27-BO6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="135" id="toV-9H-UoP"/>
+                            <constraint firstItem="sav-gm-CZU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xJv-Wc-fQ8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="eventTableView" destination="J4C-27-BO6" id="eEX-FZ-GnF"/>
+                        <outlet property="fullMarathonButton" destination="JRq-s5-qha" id="dhb-r9-ywV"/>
+                        <outlet property="fullMarathonLabel" destination="NLA-DS-Sdo" id="Sqj-5c-mUL"/>
+                        <outlet property="halfMarathonButton" destination="YgL-bo-uqE" id="c1e-jM-Nry"/>
+                        <outlet property="halfMarathonLabel" destination="l29-uD-zfS" id="NEU-Vo-Oiy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="25.637181409295355"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="running_blue" width="413" height="401"/>
+        <image name="running_green" width="413" height="401"/>
+    </resources>
+</document>
