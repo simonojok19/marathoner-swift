@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FBF5CB26266B6834006052CB /* DateUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF5CB23266B681C006052CB /* DateUtilities.framework */; };
+		FBF5CB27266B6834006052CB /* DateUtilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FBF5CB23266B681C006052CB /* DateUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FC8CBC11220BD77300E6BA82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8CBC10220BD77300E6BA82 /* AppDelegate.swift */; };
 		FC8CBC13220BD77300E6BA82 /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8CBC12220BD77300E6BA82 /* WorkoutViewController.swift */; };
 		FC8CBC16220BD77300E6BA82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8CBC14220BD77300E6BA82 /* Main.storyboard */; };
@@ -20,12 +22,43 @@
 		FC8CBC2F220C015A00E6BA82 /* DatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8CBC2E220C015A00E6BA82 /* DatePickerTableViewCell.swift */; };
 		FC8CBC31220C016100E6BA82 /* WorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8CBC30220C016100E6BA82 /* WorkoutTableViewCell.swift */; };
 		FC8CBC33220C017000E6BA82 /* OverviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8CBC32220C017000E6BA82 /* OverviewTableViewCell.swift */; };
-		FC8CBC35220C01C400E6BA82 /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8CBC34220C01C400E6BA82 /* DateConverter.swift */; };
-		FC8CBC37220C01CE00E6BA82 /* DateLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8CBC36220C01CE00E6BA82 /* DateLogic.swift */; };
 		FC8CBC39220C02F200E6BA82 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8CBC38220C02F200E6BA82 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FBF5CB22266B681C006052CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBF5CB1D266B681C006052CB /* DateUtilities.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FBF5CAF5266B6076006052CB;
+			remoteInfo = DateUtilities;
+		};
+		FBF5CB24266B681C006052CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBF5CB1D266B681C006052CB /* DateUtilities.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FBF5CAFE266B6077006052CB;
+			remoteInfo = DateUtilitiesTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FBF5CB28266B6834006052CB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FBF5CB27266B6834006052CB /* DateUtilities.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		FBF5CB14266B64F2006052CB /* DateUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DateUtilities.framework; path = "../../../Library/Developer/Xcode/DerivedData/DateUtilities-fkqaimotzsdravcrqpymtnscovib/Build/Products/Debug-iphonesimulator/DateUtilities.framework"; sourceTree = "<group>"; };
+		FBF5CB1D266B681C006052CB /* DateUtilities.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DateUtilities.xcodeproj; path = ../DateUtilities/DateUtilities.xcodeproj; sourceTree = "<group>"; };
 		FC8CBC0D220BD77300E6BA82 /* Marathoner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marathoner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC8CBC10220BD77300E6BA82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC8CBC12220BD77300E6BA82 /* WorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
@@ -41,8 +74,6 @@
 		FC8CBC2E220C015A00E6BA82 /* DatePickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerTableViewCell.swift; sourceTree = "<group>"; };
 		FC8CBC30220C016100E6BA82 /* WorkoutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewCell.swift; sourceTree = "<group>"; };
 		FC8CBC32220C017000E6BA82 /* OverviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewTableViewCell.swift; sourceTree = "<group>"; };
-		FC8CBC34220C01C400E6BA82 /* DateConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
-		FC8CBC36220C01CE00E6BA82 /* DateLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateLogic.swift; sourceTree = "<group>"; };
 		FC8CBC38220C02F200E6BA82 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,17 +82,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBF5CB26266B6834006052CB /* DateUtilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FBF5CB13266B64F2006052CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBF5CB14266B64F2006052CB /* DateUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBF5CB1E266B681C006052CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBF5CB23266B681C006052CB /* DateUtilities.framework */,
+				FBF5CB25266B681C006052CB /* DateUtilitiesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		FC8CBC04220BD77300E6BA82 = {
 			isa = PBXGroup;
 			children = (
+				FBF5CB1D266B681C006052CB /* DateUtilities.xcodeproj */,
 				FC8CBC0F220BD77300E6BA82 /* Marathoner */,
 				FC8CBC0E220BD77300E6BA82 /* Products */,
+				FBF5CB13266B64F2006052CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,8 +158,6 @@
 				FC8CBC26220BEEE800E6BA82 /* QuoteStore.swift */,
 				FC8CBC28220BF19D00E6BA82 /* TableViewAction.swift */,
 				FC8CBC2A220BF2B000E6BA82 /* RunLogic.swift */,
-				FC8CBC34220C01C400E6BA82 /* DateConverter.swift */,
-				FC8CBC36220C01CE00E6BA82 /* DateLogic.swift */,
 			);
 			path = "Data Layer";
 			sourceTree = "<group>";
@@ -123,6 +172,7 @@
 				FC8CBC09220BD77300E6BA82 /* Sources */,
 				FC8CBC0A220BD77300E6BA82 /* Frameworks */,
 				FC8CBC0B220BD77300E6BA82 /* Resources */,
+				FBF5CB28266B6834006052CB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,12 +209,35 @@
 			mainGroup = FC8CBC04220BD77300E6BA82;
 			productRefGroup = FC8CBC0E220BD77300E6BA82 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FBF5CB1E266B681C006052CB /* Products */;
+					ProjectRef = FBF5CB1D266B681C006052CB /* DateUtilities.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FC8CBC0C220BD77300E6BA82 /* Marathoner */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FBF5CB23266B681C006052CB /* DateUtilities.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DateUtilities.framework;
+			remoteRef = FBF5CB22266B681C006052CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FBF5CB25266B681C006052CB /* DateUtilitiesTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DateUtilitiesTests.xctest;
+			remoteRef = FBF5CB24266B681C006052CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FC8CBC0B220BD77300E6BA82 /* Resources */ = {
@@ -189,9 +262,7 @@
 				FC8CBC2B220BF2B000E6BA82 /* RunLogic.swift in Sources */,
 				FC8CBC29220BF19D00E6BA82 /* TableViewAction.swift in Sources */,
 				FC8CBC13220BD77300E6BA82 /* WorkoutViewController.swift in Sources */,
-				FC8CBC35220C01C400E6BA82 /* DateConverter.swift in Sources */,
 				FC8CBC33220C017000E6BA82 /* OverviewTableViewCell.swift in Sources */,
-				FC8CBC37220C01CE00E6BA82 /* DateLogic.swift in Sources */,
 				FC8CBC11220BD77300E6BA82 /* AppDelegate.swift in Sources */,
 				FC8CBC27220BEEE800E6BA82 /* QuoteStore.swift in Sources */,
 				FC8CBC25220BD9C600E6BA82 /* DateModel.swift in Sources */,
@@ -345,7 +416,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XL9HN7CJ32;
 				INFOPLIST_FILE = Marathoner/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -364,7 +435,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XL9HN7CJ32;
 				INFOPLIST_FILE = Marathoner/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
